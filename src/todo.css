@@ -1,0 +1,180 @@
+body {
+    background-color: aquamarine;
+}
+
+.container {
+    margin: auto;
+    position: relative;
+    left: 50%;
+
+    display: inline-block;
+
+    transform: translate(-50%, 0%);
+
+    background-color: aquamarine;
+
+    width: 40rem;
+}
+
+.container h1 {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    display: inline-block;
+    color: rgb(255, 255, 255);
+}
+
+.container form {
+    /* background-color: black; */
+    /* display: inline-block; */
+    width: 19rem;
+    /* height: 2rem; */
+    margin: auto;
+    border-radius: 2rem;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+}
+
+.container form input {
+    border-radius: 2rem 0rem 0rem 2rem;
+    width: 14rem;
+    height: 2rem;
+    padding: 0rem 1rem;
+
+    border: none;
+    color: rgb(44, 46, 48);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.container form button {
+    border-radius: 0rem 2rem 2rem 0%;
+    width: 2.7rem;
+    height: 2rem;
+    border: none;
+    background-color: rgb(100, 196, 164);
+    color: aliceblue;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    transition: .1s ease-in background-color;
+}
+
+.container form button:hover {
+    background-color: rgb(79, 156, 130);
+
+}
+
+.container form:hover button {
+    background-color: rgb(79, 156, 130);
+}
+
+:root {
+    --ul-width: 14rem;
+}
+
+.ulDone,
+.ulUndone {
+    /* width: var(--ul-width); */
+    min-height: 10rem;
+    /* background-color: rgb(0, 255, 76); */
+
+    /* margin: auto; */
+    margin-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.itemUndone,
+.itemDone {
+
+    transform: translate(-5%, 0%);
+    margin-top: 1px;
+    color: rgb(48, 50, 52);
+
+    width: 18rem;
+    list-style: none;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: space-between;
+
+    /* background-color: blue; */
+
+    align-items: center;
+
+}
+
+/* organizacao dos item e botoes */
+
+.textItem {
+    white-space: pre-line;
+    /* overflow: hidden; */
+    width: 14rem;
+    text-align: center;
+
+    overflow: hidden;
+    /* text-overflow: ellipsisPEU ; */
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+}
+
+.buttonItem {
+    margin-left: 14px;
+    /* padding: 2rem; */
+
+    display: flex;
+    flex-direction: column;
+
+    /* background-color: brown; */
+    max-height: 5rem;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.buttonItem button {
+    border: none;
+
+    background-color: aliceblue;
+
+    width: 4rem;
+    height: 2.5rem;
+}
+
+.ulDone .buttonItem button {
+
+    height: 4rem;
+}
+
+.check {
+    transition: .4s all;
+}
+
+.trash {
+    transition: .4s all;
+}
+
+.check:hover {
+    background-color: rgb(0, 195, 255);
+    color: aliceblue;
+}
+
+.trash:hover {
+    background-color: rgb(255, 106, 106);
+    color: aliceblue;
+}
+
+.trashIcon,
+.checkIcon {
+    scale: 1.5;
+}
